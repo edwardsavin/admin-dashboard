@@ -5,9 +5,204 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4906b3a6e2.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Admin Dashboard</title>
   </head>
   <body>
-    <script src="./scripts/script.js"></script>
+    <nav class="nav-main">
+      <div class="logo">
+        <a href="#"><i class="fa-solid fa-cubes-stacked"></i>Dashboard</a>
+      </div>
+
+      <ul>
+        <li>
+          <a href="#"><i class="fa-solid fa-house"></i>Home </a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-address-card"></i>Profile</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-message"></i></i>Messages</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-clock"></i>History</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-bars-progress"></i>Tasks</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-users"></i>Communities</a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-circle-question"></i>Support</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-user-shield"></i>Privacy</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <form action="/" method="GET" class="search-form">
+        <button type="submit" class="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input type="search" name="search" id="search" />
+      </form>
+
+      <div class="header-notifications">
+        <button type="button"><i class="fa-solid fa-bell"></i></button>
+        <a href="#" class="profile-picture"><img src="#" alt="Your profile picture" id="pp-main-user"></a>
+        <h3>Edward Savin</h3>
+      </div>
+
+      <div class="header-user">
+        <a href="#" class="profile-picture"><img src="#" alt="Your profile picture" id="pp-main-user"></a>
+        <div class="welcome-text">
+          <h6>Hi there,</h6>
+          <h2>Edward Savin (@edward)</h2>
+        </div>
+        <button type="button">New</button>
+        <button type="button">Upload</button>
+        <button type="button">Share</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="projects">
+        <h2>Your Projects</h2>
+        <article>
+          <h3>Super Cool Project</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi excepturi odit totam dignissimos ab nihil laborum, laudantium, fuga deleniti pariatur est vitae beatae repellat at ut, recusandae reiciendis unde nostrum!</p>
+          <div class="article-actions">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-regular fa-share-from-square"></i>
+          </div>
+        </article>
+        <article>
+          <h3>Less Cool Project</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dignissimos molestias quibusdam assumenda fuga consectetur explicabo aliquam cupiditate earum! Autem cum, obcaecati harum ad iusto at placeat repellendus eum corrupti.</p>
+          <div class="article-actions">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-regular fa-share-from-square"></i>
+          </div>
+        </article>
+        <article>
+          <h3>Impossible App</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dignissimos molestias quibusdam assumenda fuga consectetur explicabo aliquam cupiditate earum! Autem cum, obcaecati harum ad iusto at placeat repellendus eum corrupti.</p>
+          <div class="article-actions">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-regular fa-share-from-square"></i>
+          </div>
+        </article>
+        <article>
+          <h3>Easy Peasy App</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dignissimos molestias quibusdam assumenda fuga consectetur explicabo aliquam cupiditate earum! Autem cum, obcaecati harum ad iusto at placeat repellendus eum corrupti.</p>
+          <div class="article-actions">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-regular fa-share-from-square"></i>
+          </div>
+        </article>
+        <article>
+          <h3>Ad Blocker</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dignissimos molestias quibusdam assumenda fuga consectetur explicabo aliquam cupiditate earum! Autem cum, obcaecati harum ad iusto at placeat repellendus eum corrupti.</p>
+          <div class="article-actions">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-regular fa-share-from-square"></i>
+          </div>
+        </article>
+        <article>
+          <h3>Money Maker</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dignissimos molestias quibusdam assumenda fuga consectetur explicabo aliquam cupiditate earum! Autem cum, obcaecati harum ad iusto at placeat repellendus eum corrupti.</p>
+          <div class="article-actions">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-regular fa-share-from-square"></i>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <aside>
+      <section class="announcements">
+        <h2>Announcements</h2>
+        <div class="announcements-container">
+          <article>
+            <h5>Site Meintenance</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dignissimos quo sequi magnam accusantium officia saepe debitis. Quisquam libero qui ipsa tempora nulla vel? Sint possimus voluptates aliquid rerum expedita?</p>
+          </article>
+          <article>
+            <h5>Community Share Day</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dignissimos quo sequi magnam accusantium officia saepe debitis. Quisquam libero qui ipsa tempora nulla vel? Sint possimus voluptates aliquid rerum expedita?</p>
+          </article>
+          <article>
+            <h5>Updated Privacy Policy</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dignissimos quo sequi magnam accusantium officia saepe debitis. Quisquam libero qui ipsa tempora nulla vel? Sint possimus voluptates aliquid rerum expedita?</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="trending">
+        <h2>Trending</h2>
+        <div class="trending-container">
+          <div class="user-short-description" id="trending-user-1">
+            <a href="#"><img src="#" alt="Trednding user 1 profile picture" id="pp-trending-user-1"></a>
+            <div class="trending-user-name">
+              <a href="#">
+                <h5>@tegan</h5>
+              </a>
+              <p>World Pace Builder</p>
+            </div>
+          </div>
+
+          <div class="user-short-description" id="trending-user-2">
+            <a href="#"><img src="#" alt="Trednding user 2 profile picture" id="pp-trending-user-2"></a>
+            <div class="trending-user-name">
+              <a href="#">
+                <h5>@morgan</h5>
+              </a>
+              <p>Super Cool Project</p>
+            </div>
+          </div>
+
+          <div class="user-short-description" id="trending-user-3">
+            <a href="#"><img src="#" alt="Trednding user 3 profile picture" id="pp-trending-user-3"></a>
+            <div class="trending-user-name">
+              <a href="#">
+                <h5>@kendall</h5>
+              </a>
+              <p>Life Changing App</p>
+            </div>
+          </div>
+
+          <div class="user-short-description" id="trending-user-4">
+            <a href="#"><img src="#" alt="Trednding user 4 profile picture" id="pp-trending-user-4"></a>
+            <div class="trending-user-name">
+              <a href="#">
+                <h5>@alex</h5>
+              </a>
+              <p>No Traffic Maker</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </aside>
+
+    <script src="./scripts/script.js" defer></script>
   </body>
 </html>
