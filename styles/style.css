@@ -62,3 +62,89 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+
+/* Composition */
+.body-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.header-main-container {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+.nav-main {
+  display: grid;
+  gap: 1em;
+  max-height: 100vh;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 2rem;
+}
+
+.aside {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  max-height: 100vh;
+}
+
+/* TODO: work more on this */
+
+.announcements-container p {
+  display: -webkit-box;
+  max-width: 200px;
+  max-height: 5em;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  gap: 1rem;
+  padding: 1em 2em 1em 2em;
+  max-height: 5vh;
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.header-notifications {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+}
+
+.header-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.welcome-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.welcome-buttons {
+  display: flex;
+  justify-content: space-around;
+  /* for demo */
+  max-height: 2rem;
+}
+
+/* Utilities */
+
+/* Blocks */
