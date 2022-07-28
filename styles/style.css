@@ -5,7 +5,7 @@
   --clr-neutral-400: hsl(210, 17%, 93%);
 
   --clr-accent-400: hsl(210, 10%, 23%);
-  --clr-accent-700: #E69C24;
+  --clr-accent-700: #e69c24;
 
   --ff-primary: "Space Grotesk", -apple-system, BlinkMacSystemFont, avenir next,
     avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
@@ -179,7 +179,7 @@ svg {
 
 .welcome-container {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 6fr;
   align-items: center;
 }
 
