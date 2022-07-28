@@ -2,7 +2,7 @@
   --clr-primary-400: hsl(210, 11%, 15%);
 
   --clr-neutral-100: hsl(210, 17%, 98%);
-  --clr-neutral-400: hsl(210, 16%, 93%);
+  --clr-neutral-400: hsl(210, 17%, 93%);
 
   --clr-accent-400: hsl(210, 10%, 23%);
   --clr-accent-700: hsl(39, 75%, 50%);
@@ -114,7 +114,7 @@ svg {
 
 .header-main-container {
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
 }
 
 .nav-main {
@@ -131,22 +131,14 @@ svg {
   display: grid;
   grid-template-columns: 4fr 1fr;
   gap: 2rem;
+  padding: 2rem;
 }
 
 .aside {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
-  max-height: 100vh;
-}
-
-.announcements-container p {
-  display: -webkit-box;
-  max-width: 15em;
-  max-height: 5em;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  height: 100%;
 }
 
 .projects {
@@ -272,6 +264,10 @@ svg {
   font-family: var(--ff-heading);
 }
 
+.margin-bottom-200 {
+  margin-bottom: 0.5rem;
+}
+
 /* Blocks */
 
 .nav-ul {
@@ -280,6 +276,59 @@ svg {
   gap: 1rem;
 }
 
+.article-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-neutral-100);
+  padding: 1rem;
+  border-radius: 0.1rem;
+  border-left: 1rem solid var(--clr-accent-700);
+  box-shadow: 10px 10px 15px -5px rgba(53, 59, 65, 0.11);
+}
+
+.article-actions {
+  margin-top: 2rem;
+  align-self: flex-end;
+}
+
+.announcements-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-neutral-100);
+  padding: 2rem;
+  border-radius: 0.1rem;
+  gap: 1rem;
+  box-shadow: 10px 10px 15px -5px rgba(53, 59, 65, 0.11);
+}
+
+.announcements-container p {
+  display: -webkit-box;
+  max-width: 20rem;
+  max-height: 5rem;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.trending-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 15px -5px rgba(53, 59, 65, 0.11);
+  background-color: var(--clr-neutral-100);
+  padding: 2rem;
+  border-radius: 0.1rem;
+  gap: 1rem;
+}
+
+.user-short-description {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+}
+
+.avatar {
+  border-radius: 100px;
+  max-width: 50px;
+}
 /* Button */
 
 .button {
