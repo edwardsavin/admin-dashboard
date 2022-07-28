@@ -1,3 +1,30 @@
+:root {
+  --clr-primary-400: hsl(210, 11%, 15%);
+
+  --clr-neutral-100: hsl(210, 17%, 98%);
+  --clr-neutral-400: hsl(210, 16%, 93%);
+
+  --clr-accent-400: hsl(210, 73%, 36%);
+  --clr-accent-700: hsl(39, 75%, 50%);
+
+  --ff-primary: "Space Grotesk", -apple-system, BlinkMacSystemFont, avenir next,
+    avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
+    arial, sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-200: 0.5rem;
+  --fs-300: 0.75rem;
+  --fs-400: 1rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -39,6 +66,14 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Make images easier to work with */
 img,
 picture,
@@ -67,6 +102,7 @@ svg {
 .body-container {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  min-height: 100%;
 }
 
 .header-main-container {
@@ -93,13 +129,11 @@ svg {
   max-height: 100vh;
 }
 
-/* TODO: work more on this */
-
 .announcements-container p {
   display: -webkit-box;
-  max-width: 200px;
+  max-width: 15em;
   max-height: 5em;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -141,10 +175,78 @@ svg {
 .welcome-buttons {
   display: flex;
   justify-content: space-around;
-  /* for demo */
-  max-height: 2rem;
 }
 
 /* Utilities */
+
+.text-primary-400 {
+  color: var(--clr-primary-400);
+}
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+.text-neutral-400 {
+  color: var(--clr-neutral-400);
+}
+.text-accent-400 {
+  color: var(--clr-accent-400);
+}
+.text-accent-700 {
+  color: var(--clr-accent-700);
+}
+
+.bg-primary-400 {
+  background-color: var(--clr-primary-400);
+}
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+.bg-neutral-400 {
+  background-color: var(--clr-neutral-400);
+}
+.bg-accent-400 {
+  background-color: var(--clr-accent-400);
+}
+.bg-accent-700 {
+  background-color: var(--clr-accent-700);
+}
+
+.fw-light {
+  font-weight: var(--fw-light);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.ff-body {
+  font-family: var(--ff-body);
+}
+
+.ff-heading {
+  font-family: var(--ff-heading);
+}
 
 /* Blocks */
