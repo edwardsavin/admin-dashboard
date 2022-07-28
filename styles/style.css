@@ -4,7 +4,7 @@
   --clr-neutral-100: hsl(210, 17%, 98%);
   --clr-neutral-400: hsl(210, 16%, 93%);
 
-  --clr-accent-400: hsl(210, 73%, 36%);
+  --clr-accent-400: hsl(210, 10%, 23%);
   --clr-accent-700: hsl(39, 75%, 50%);
 
   --ff-primary: "Space Grotesk", -apple-system, BlinkMacSystemFont, avenir next,
@@ -20,6 +20,7 @@
 
   --fs-200: 0.5rem;
   --fs-300: 0.75rem;
+  --fs-350: 0.875rem;
   --fs-400: 1rem;
   --fs-500: 1.25rem;
   --fs-600: 1.5rem;
@@ -101,7 +102,7 @@ svg {
 /* Composition */
 .body-container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   min-height: 100%;
 }
 
@@ -229,6 +230,10 @@ svg {
   font-size: var(--fs-300);
 }
 
+.fs-350 {
+  font-size: var(--fs-350);
+}
+
 .fs-400 {
   font-size: var(--fs-400);
 }
@@ -250,3 +255,26 @@ svg {
 }
 
 /* Blocks */
+
+/* Button */
+
+.button {
+  background-color: var(--clr-accent-400);
+  color: var(--clr-neutral-400);
+  border: 0;
+  width: 6.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
