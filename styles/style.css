@@ -5,7 +5,7 @@
   --clr-neutral-400: hsl(210, 17%, 93%);
 
   --clr-accent-400: hsl(210, 10%, 23%);
-  --clr-accent-700: hsl(39, 75%, 50%);
+  --clr-accent-700: #E69C24;
 
   --ff-primary: "Space Grotesk", -apple-system, BlinkMacSystemFont, avenir next,
     avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
@@ -113,8 +113,9 @@ svg {
 }
 
 .header-main-container {
-  display: grid;
-  grid-template-rows: 1fr 5fr;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
 }
 
 .nav-main {
@@ -149,10 +150,10 @@ svg {
 
 .header {
   display: grid;
-  grid-template-rows: 1fr 3fr;
-  gap: 1rem;
-  padding: 1em 2em 1em 2em;
-  max-height: 5vh;
+  grid-template-rows: 1fr 1fr;
+  padding: 0em 3em 1em 3em;
+  box-shadow: 0px 11px 16px -10px rgba(53, 59, 65, 0.13);
+  z-index: 1;
 }
 
 .header-top {
@@ -160,9 +161,15 @@ svg {
   grid-template-columns: 3fr 1fr;
 }
 
+.search-containter {
+  display: flex;
+  align-items: center;
+}
+
 .header-notifications {
   display: grid;
   grid-template-columns: 1fr 1fr 3fr;
+  align-items: center;
 }
 
 .header-bottom {
@@ -173,11 +180,13 @@ svg {
 .welcome-container {
   display: grid;
   grid-template-columns: 1fr 5fr;
+  align-items: center;
 }
 
 .welcome-buttons {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
 }
 
 /* Utilities */
@@ -328,6 +337,25 @@ svg {
 .avatar {
   border-radius: 100px;
   max-width: 50px;
+}
+
+.welcome-container .avatar {
+  max-width: 100px;
+}
+
+#search {
+  background-color: hsla(210, 10%, 23%, 0.144);
+  border: 0;
+  border-radius: 20px;
+  flex-grow: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.search-form {
+  display: flex;
+  flex: 1;
+  max-width: 80%;
 }
 /* Button */
 
